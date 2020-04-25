@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <!-- Jeremiah Bonham : VFW 1308 : Project 1 -->
+<html>
+    <head>
+        <title>Lending Library Tracker</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <meta charset="UTF-8"/>
+        <meta name= "Description" content= "Lending Library"/>
+        <meta name= "Keywords" content= "Lending, Library, html5, web app"/>
+        <meta name= "robots" content= "no index, no follow"/>
+        <meta name= "viewport" content= "user-scalable=no, width=device-width"/>
+        <!--<meta name= "viewport" content= "target-densitydpi=device-dpi"/>-->
+        <meta name= "Handheld Friendly" content= "true" />
+        <meta name= "MobileOptimized" content= "320"/>
+    </head>
+    <body>
+        <header>
+            <h1>Lending Tracker</h1>
+        </header>        
+            <form action= "#" method= "post" id="data">  
+                <fieldset>
+                    <legend> <strong> Item Information </strong> </legend>
+                    <div id="titleLocation">
+                    <label for="title"> Title:</label><input type="text" id="title"</label>
+                    <div/>
+                     <div id="typeofItem">
+                    <div id="items"><label for="items">Type of Item: </label></div>
+                    </div>
+                     
+                </fieldset>
+                <fieldset>
+                     <legend> <strong> Borrower Information </strong> </legend>
+                       <ul>
+                        <li><label for="name"> Name:</label><input type="text" id="name"</input>
+                        <li><label for="date"> Date:</label><input type="date" id="date"</input>
+                        <li><label for="loantime"> Days to be Loaned: </label><input type="range" id="loantime" min="1" max="14"</input>
+                        <li><label for="reminder"> Sent Reminder for Return:</label><input type="checkbox" id="reminder" </input>
+                        <li><label> Extra Information: </label>
+                            <div>
+                                <textarea id="extra" rows="4" cols="30"> </textarea>
+                            </div>
+                       </ul>                        
+                </fieldset>
+                    <section>
+                       <div>
+                        <p></p>
+                        <input type= "button" value= "Save Info" id="save"/>
+                        <p></p>
+                        </div>
+                    </section>
+            </form> 
+        <footer>
+            <nav> 
+                <a href="#/" id= "viewData"/> View Stored </a>
+                &nbsp&nbsp&nbsp
+                <a href="#/" id= "clearData"/> Clear Data </a>
+                &nbsp&nbsp&nbsp
+                <a href="index.html" id= "home"/> Return Home </a>
+            </nav>
+        </footer>
+    <script type="text/javascript" src="js/forms.js"></script>
+    </body>
+</html>

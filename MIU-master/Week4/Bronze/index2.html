@@ -1,0 +1,286 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Lending Library</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	<!-- StyleSheets under here -->
+	
+	
+	<link rel="stylesheet" href="css/themes/bronzeApp.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+        
+</head>
+<body>
+<!-- Home Page -->
+        <div data-role="page" id= "home" data-theme="a"> 
+           
+        <div data-role="header" data-position="fixed">
+        
+	<img border="0" src="images/branding.png" alt="Logo" style="float:left;display:inline"/>
+	<h1> Lending Library </h1>  
+	
+	 
+	</div>
+	
+	<div data-role="content" >
+	
+	<h3 style="color: #032a41" > <p style="text-align: center" >Never forget who borrowed your media ever again...</p></h3>
+		
+	<br></br>
+	<div data-role="button"style="margin:-30px;"> <a href="additem2.html" rel="external"> <img src="images/cta2.png"/> </a></div>
+	<br></br>
+	
+	<br></br>
+	
+	<ul data-role="listview"  data-filter="true" data-filter-placeholder="Browse by item type...." data-inset="true" >
+		<li><a href=#sample1 data-transition="slidefade">Browse All</a></li>
+		<li><a href=#sample1 data-transition="slidefade">By Title</a></li>
+		<li><a href=#sample1 data-transition="slidefade">By Date</a></li>
+		<li><a href=#sample1 data-transition="slidefade">By Person</a></li>
+		<li><a href=#sample1 data-transition="slidefade">Sent Reminder</a></li>
+		<li><a href=#itemtype data-transition="slidefade">By Item Type</a></li>
+		</ul>
+		
+		
+		
+		
+		</ul>
+		
+		</span>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+		<li><a href=#home data-role="button" class="ui-btn-active ui-state-persist" data-icon="home" data-iconpos="top">Home</a></li>
+		<li><a href=#grid data-role="button"  data-icon="grid" data-iconpos="top">Grid</a></li>
+		<li><a href=#about data-role="button"  data-icon="info" data-iconpos="top">About</a></li>
+		</ul>
+	</div>
+	</div>
+        
+        </div>
+
+<!-- Item Type -->		
+	
+	
+	<div data-role="page" id= "itemtype" data-theme="a">
+           
+        <div data-role="header" data-position="fixed"><img border="0" src="images/branding.png" alt="Logo" style="float:left;display:inline"/>
+        <h1>About</h1>
+	</div>
+	
+	<div data-role="content">        
+	
+	
+	<ul data-role="listview" data-theme="c">
+		
+		<li><a href=#sample1>
+			<img src="images/Movie.png">
+			<h2>Movies</h2>
+			<p>Browse by movie...</p>
+		</a>
+		</li>
+		
+		<li><a href=#sample1>
+			<img src="images/Game.png">
+			<h2>Game</h2>
+			<p>Browse by game...</p>
+		</a>
+		</li>
+		
+		<li><a href=#sample1>
+			<img src="images/Book.png">
+			<h2>Book</h2>
+			<p>Browse by book...</p>
+		</a>
+		</li>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-inset="true">
+	<div data-role="navbar">
+		<ul>
+		<li><a href=#home data-role="button" class="ui-btn-active ui-state-persist" data-icon="home" data-iconpos="top">Home</a></li>
+		<li><a href=#grid data-role="button"  data-icon="grid" data-iconpos="top">Grid</a></li>
+		<li><a href=#about data-role="button"  data-icon="info" data-iconpos="top">About</a></li>
+		</ul>
+	</div>
+	</div>
+        
+        </div>
+	
+<!-- About Page -->		
+	
+	
+	<div data-role="page" id= "about" data-theme="a">
+           
+        <div data-role="header" data-position="fixed"><img border="0" src="images/branding.png" alt="Logo" style="float:left;display:inline"/>
+        <h1>About</h1>
+	</div>
+	
+	<div data-role="content">
+	
+	<div class="ui-grid-a">
+  
+    
+    
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:175px">
+    <a href=#popAbout data-rel="popup" data-role="button"  data-iconpos="top"><img src="images/gridabout.png" style="margin:-20px;"><br></br>About</a></div></div>
+
+	<div data-role="popup" id="popAbout" >
+    <h2>About</h2>
+		<ul data-role="listview" data-theme="c">
+		<li>
+			<p>App designed and built by Jeremiah Bonham  </p>
+			<p></p>
+			<p>Mobile Development Student at Full Sail  </p>
+			<p></p>
+			<p>10+ years of graphic design experience  </p>
+		</li>
+		</ul>
+	</div>
+
+
+    
+    
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:175px">
+    <a href="http://b15021.github.io/MIU/Week2/Gold/index.html" data-role="button"  data-iconpos="top"><img src="images/gridGoldApp.png" style="margin:-20px;" ><br></br>App</a></div></div>
+    
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:175px">
+    <a href="https://github.com/b15021/MIU/tree/master/Week4/Bronze" data-role="button"  data-iconpos="top"><img src="images/gridBronzeCode.png" style="margin:-20px;"><br></br>Code</a></div></div>
+    
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:175px">
+    <a href="https://github.com/b15021/MIU/tree/master/Week4/Gold" data-role="button"  data-iconpos="top"><img src="images/gridGoldCode.png" style="margin:-20px;"><br></br>Code</a></div></div>
+    
+    
+    
+	</div>
+	</div>
+	
+
+	
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+		<li><a href=#home data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>
+		<li><a href=#grid data-role="button"  data-icon="grid" data-iconpos="top">Grid</a></li>
+		<li><a href=#about data-role="button" class="ui-btn-active ui-state-persist" data-icon="info" data-iconpos="top">About</a></li>
+		</ul>
+	</div>
+	</div>
+        
+        </div>
+	
+	
+
+        
+
+<!-- Grid Page -->       
+        
+        <div data-role="page" id= "grid" data-theme="a">
+            <div data-role="header" data-position="fixed" ><img border="0" src="images/branding.png" alt="Logo" style="float:left;display:inline"/>
+                <h1>Thumbnail Grid </h1>
+            </div>
+        
+            <div data-role="content">
+                 
+        
+           
+               
+    <div  id="gridLayout" class="ui-grid-c" data-inline="true">
+    <div class="ui-block-a"><div  class="ui-bar ui-bar-none" "style="height:140px"> <img src="images/comic1.jpg" style="margin: -5px"><br></br>Comic1 </div></div>
+    <div class="ui-block-b"><div  class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic2.jpg" style="margin: -5px"><br></br> Comic2 </div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic3.jpg" style="margin: -5px"><br></br> Comic3 </div></div>
+    <div class="ui-block-d"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic4.jpg" style="margin: -5px"><br></br> Comic4 </div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic5.jpg" style="margin: -5px"><br></br> Comic5 </div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic6.jpg" style="margin: -5px"><br></br> Comic6 </div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic7.jpg" style="margin: -5px"><br></br> Comic7 </div></div>
+    <div class="ui-block-d"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic8.jpg" style="margin: -5px"><br></br> Comic8</div></div>
+    <div class="ui-block-a"><div  class="ui-bar ui-bar-none" "style="height:140px"> <img src="images/comic1.jpg" style="margin: -5px"><br></br>ComicA </div></div>
+    <div class="ui-block-b"><div  class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic2.jpg" style="margin: -5px"><br></br> ComicB </div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic3.jpg" style="margin: -5px"><br></br> ComicC </div></div>
+    <div class="ui-block-d"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic4.jpg" style="margin: -5px"><br></br> ComicD </div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic5.jpg" style="margin: -5px"><br></br> ComicE</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic6.jpg" style="margin: -5px"><br></br> ComicF</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic7.jpg" style="margin: -5px"><br></br> ComicG</div></div>
+    <div class="ui-block-d"><div class="ui-bar ui-bar-none" style="height:140px"> <img src="images/comic8.jpg" style="margin: -5px"><br></br> ComicH</div></div>
+    
+    </div>
+	        
+	               
+                
+            </div>
+         
+	  
+	  <p style="text-align: center"><small>All comic images public domain</small></p>
+            <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+		<li><a href=#home data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>
+		<li><a href=#grid data-role="button" class="ui-btn-active ui-state-persist" data-icon="grid" data-iconpos="top">Grid</a></li>
+		<li><a href=#about data-role="button"  data-icon="info" data-iconpos="top">About</a></li>
+		</ul>
+            </div>
+            </div>
+        
+         </div>
+          
+       
+
+	
+<!-- Sample1 Page -->	
+	
+	<div data-role="page" id= "sample1"  data-theme="a">
+            
+            <div data-role="header" data-position="fixed" data-theme="a"><img border="0" src="images/branding.png" alt="Logo" style="float:left;display:inline"/>
+                <h1>Results</h1>
+            </div>
+        
+             <div data-role="content">
+                 <h2> Search Results not found </h2>
+		 <br></br>
+		 <h3> Page still under construction </h3>
+            </div> 
+     
+            <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+		<li><a href=#home data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>
+		<li><a href=#grid data-role="button"  data-icon="grid" data-iconpos="top">Grid</a></li>
+		<li><a href=#about data-role="button"  data-icon="info" data-iconpos="top">About</a></li>
+		</ul>
+            </div>
+            </div>
+        
+         </div>
+       
+       
+      
+       
+       
+       
+       
+        
+	        
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Jeremiah Bonham : MIU 1309 -->
+<html>
+  <head>
+    <title>
+      Lending Library Tracker
+    </title>
+    <link rel="stylesheet" href="css/addInfoStyle.css" type="text/css" />
+    <meta charset="UTF-8"/>
+    <meta name= "Description" content= "Lending Library"/>
+    <meta name= "Keywords" content= "Lending, Library, html5, web app"/>
+    <meta name= "robots" content= "no index, no follow"/>
+    <meta name= "viewport" content= "user-scalable=yes, width=device-width"/>
+    <!--
+<meta name= "viewport" content= "target-densitydpi=device-dpi"/>
+-->
+      <meta name= "Handheld Friendly" content= "true" />
+      <meta name= "MobileOptimized" content= "320"/>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Lending Tracker
+      </h1>
+    </header>
+    
+    <form action= "#" method= "post" id="data">
+      
+      <fieldset>
+        
+        <legend>
+          
+          <strong>
+            Item Information 
+          </strong>
+          
+        </legend>
+        
+        <div id="titleLocation">
+          <label for="title">
+            Title:*
+          </label>
+          <input type="text" id="title"/>
+          <div/>
+          <div id="typeSelect">
+            <li id="select">
+              <label for=typeItem">
+Type of Item: *
+</label>
+<br />
+</li>
+
+
+
+</fieldset>
+<fieldset>
+<legend>
+
+<strong>
+Borrower Information 
+</strong>
+
+</legend>
+<ul>
+<li>
+<label for="name">
+Name:*
+</label>
+<input type="text" id="name"/>
+</li>
+<li>
+<label for="date">
+Date:
+</label>
+<input type="date" id="date"/>
+</li>
+<li>
+<label for="loantime">
+Days to be Loaned: 
+<br>
+0 
+<input type="range" id="loantime" min="1" max="30"/>
+30
+</br>
+</li>
+<li>
+<label for="reminder">
+Sent Reminder for Return:
+</label>
+<input type="checkbox"  id="reminder" />
+</li>
+<li>
+<label>
+Extra Information: 
+</label>
+
+<div>
+<textarea id="extra" rows="4" cols="30">
+
+</textarea>
+</div>
+</li>
+</ul>
+
+</fieldset>
+<section>
+<div>
+<p>
+</p>
+<input type= "submit" value= "Save Info" id="save"  >
+<p>
+</p>
+</div>
+<ul id= "errors">
+</ul>
+<small id=small />
+* Fields are Required
+</small>
+</section>
+</form>
+
+<footer>
+<nav>
+
+<a href="#/" id= "viewData"/>
+View Stored 
+</a>
+&nbsp
+<a href="#/" id= "clearData"/>
+Clear Data 
+</a>
+&nbsp
+<a href="index2.html" id= "home"/>
+Return Home 
+</a>
+
+<a href="additem.html" id= "addNew" style="display: none; "/>
+Add New Item 
+</a>
+
+</nav>
+</footer>
+<script type="text/javascript" src="js/main.js">
+</script>
+<script type="text/javascript" src="js/json.js">
+</script>
+</body>
+</html>
